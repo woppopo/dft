@@ -9,6 +9,27 @@ impl Complex {
         Complex { real, imag }
     }
 
+    pub const fn zero() -> Self {
+        Complex {
+            real: 0.0,
+            imag: 0.0,
+        }
+    }
+
+    pub const fn one() -> Self {
+        Complex {
+            real: 1.0,
+            imag: 0.0,
+        }
+    }
+
+    pub const fn i() -> Self {
+        Complex {
+            real: 0.0,
+            imag: 1.0,
+        }
+    }
+
     pub const fn re(&self) -> f64 {
         self.real
     }
